@@ -1,0 +1,240 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebSim - AI-powered web page builder for creating stunning websites effortlessly">
+    <title>WebSim - AI-Powered Web Page Builder</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        --primary: #4A90E2;
+        --secondary: #50E3C2;
+        --accent: #FF6B6B;
+        --background: #F8FAFC;
+        --text: #2C3E50;
+        }
+
+        body {
+        font-family: 'Quicksand', sans-serif;
+        background: var(--background);
+        color: var(--text);
+        line-height: 1.6;
+        }
+
+        .hero-section {
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        padding: 6rem 0;
+        color: white;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .feature-card {
+        background: white;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0,0,0,0.05);
+        height: 100%;
+        }
+
+        .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .feature-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--primary);
+        transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover .feature-icon {
+        transform: scale(1.1);
+        }
+
+        .btn-custom {
+        background: var(--accent);
+        color: white;
+        padding: 0.8rem 2rem;
+        border-radius: 30px;
+        border: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .btn-custom:hover {
+        background: #ff5252;
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        .how-to-use {
+        background: white;
+        padding: 4rem 0;
+        }
+
+        .step-card {
+        background: var(--background);
+        padding: 2rem;
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        height: 100%;
+        }
+
+        .step-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+
+        .step-number {
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        margin: 4rem 0;
+        }
+
+        .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        }
+
+        @media (max-width: 768px) {
+        .hero-section {
+            padding: 4rem 0;
+        }
+        .feature-card {
+            margin-bottom: 1.5rem;
+        }
+        }
+    </style>
+    </head>
+    <body>
+    <section class="hero-section">
+        <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-4" data-aos="fade-down">Welcome to The Only Prompt - AI Builder</h1>
+        <p class="lead mb-4" data-aos="fade-up">Transform your ideas into stunning websites with The Only Prompt - our AI-powered website generator</p>
+        <button class="btn btn-custom" data-aos="zoom-in">Start Building <i class="fas fa-magic ms-2"></i></button>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="video-container" data-aos="fade-up">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="WebSim Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <section class="how-to-use">
+        <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">How to Use The Only Prompt</h2>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-card">
+                <div class="step-number">01</div>
+                <h3 class="h5 mb-3">Describe Your Vision</h3>
+                <p>Simply describe the website you want in natural language. Be as specific or general as you like - our AI understands both!</p>
+            </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-card">
+                <div class="step-number">02</div>
+                <h3 class="h5 mb-3">Review & Customize</h3>
+                <p>Our AI generates a complete website based on your description. Use our visual editor to make any adjustments you want.</p>
+            </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-card">
+                <div class="step-number">03</div>
+                <h3 class="h5 mb-3">Export & Launch</h3>
+                <p>Happy with your site? Export the code and launch your website instantly. It's that simple!</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="container py-5">
+        <h2 class="text-center mb-5" data-aos="fade-up">Powerful Features</h2>
+        <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-card">
+            <i class="fas fa-robot feature-icon"></i>
+            <h3 class="h5 mb-3">AI-Powered Design</h3>
+            <p class="mb-0">Our advanced AI understands your needs and creates the perfect website</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card">
+            <i class="fas fa-wand-magic-sparkles feature-icon"></i>
+            <h3 class="h5 mb-3">Visual Editor</h3>
+            <p class="mb-0">Fine-tune your site with our intuitive drag-and-drop interface</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-card">
+            <i class="fas fa-mobile-screen feature-icon"></i>
+            <i class="fas fa-tablet-screen-button feature-icon ms-2"></i>
+            <i class="fas fa-desktop feature-icon ms-2"></i>
+            <h3 class="h5 mb-3">Responsive Design</h3>
+            <p class="mb-0">Your website looks perfect on all devices automatically</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-card">
+            <i class="fas fa-bolt feature-icon"></i>
+            <h3 class="h5 mb-3">Instant Generation</h3>
+            <p class="mb-0">Get your complete website in seconds, not hours or days</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
+        });
+        
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+            });
+        });
+        });
+    </script>
+    </body>
+    </html>
+    
