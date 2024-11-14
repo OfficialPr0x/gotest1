@@ -1,0 +1,22 @@
+
+version: 2.1
+orbs:
+  netlify: netlify/deployment@1
+jobs:
+  deploy:
+    docker:
+      - image: cimg/node:16.13
+    steps:
+      - checkout
+      - netlify/deploy:
+          enable-pull-requests: false
+          package-json-path: package.json
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: main
+  
